@@ -43,21 +43,26 @@ export default function QuestionOption({
     >
       <div className="flex items-center gap-4 md:gap-8 w-full">
         <div
+          style={{
+            backgroundColor: isSelectedAnswerWrong() ? "#EE5454" : "",
+            color: isSelectedAnswerWrong() ? "#FFFFFF" : "",
+          }}
           className={
             "px-[14px] pt-[7px] md:pt-4 pb-[7px] md:pb-3 bg-background font-medium rounded-lg " +
             (!isSubmitted && !isAnswerSelected()
               ? "group-hover:bg-secondary-foreground group-hover:text-secondary"
               : "") +
             (isAnswerSelected() ? " text-white bg-secondary  " : "") +
-            (isSelectedAnswerCorrect() ? " text-white bg-success" : "") +
-            (isSelectedAnswerWrong() ? " bg-red-500 text-white" : "")
+            (isSelectedAnswerCorrect() ? " text-white bg-success" : "")
           }
         >
           <span
             className={
               "text-[18px] md:text-heading-s dark:text-primary " +
               (isAnswerSelected() ? "dark:text-white " : "") +
-              (!isAnswerSelected() ? "dark:group-hover:text-secondary" : "")
+              (!isAnswerSelected() && !isSubmitted
+                ? "dark:group-hover:text-secondary"
+                : "")
             }
           >
             {optionLetters[index]}

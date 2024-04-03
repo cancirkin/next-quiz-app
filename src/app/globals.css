@@ -6,28 +6,18 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --text-muted-rgb: 98, 108, 127;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1160px;
+  @apply text-primary bg-background dark:bg-primary dark:text-white box-border bg-[url('../../public/images/pattern-background-mobile-light.svg')]  md:bg-[url('../../public/images/pattern-background-tablet-light.svg')] lg:bg-[url('../../public/images/pattern-background-desktop-light.svg')];
+  @apply dark:bg-[url(../../public/images/pattern-background-mobile-dark.svg)] dark:md:bg-[url(../../public/images/pattern-background-tablet-dark.svg)] dark:lg:bg-[url(../../public/images/pattern-background-desktop-dark.svg)];
 }

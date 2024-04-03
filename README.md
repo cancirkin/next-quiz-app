@@ -60,8 +60,6 @@ Users should be able to:
 -Need to improve my dynamic tailwind css classes code.
 -When you select a quiz title on landing page, i write the title in the header. At this point i used search params and reimport the data and find the quiz title. This is ok but it is not best practice.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 These are all you need.

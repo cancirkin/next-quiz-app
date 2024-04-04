@@ -9,6 +9,7 @@ This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https
 - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I Learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -55,6 +56,10 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 
+### What I Learned
+
+- After completing the project, I did research on dynamic classes on tailwind. Mostly users says use [TwMerge](https://www.npmjs.com/package/tailwind-merge). I dropped a stackoverflow link below.
+
 ### Continued development
 
 -Need to improve my dynamic tailwind css classes code.
@@ -62,10 +67,9 @@ Users should be able to:
 
 ### Useful resources
 
-These are all you need.
-
 - [Next.js Docs](https://nextjs.org/docs)
 - [Tailwind Docs](https://tailwindcss.com/docs)
+- [Dynamic Class Problem](https://stackoverflow.com/questions/72148525/tailwindcss-3-classes-doesnt-override-previous-classes)
 
 ## Author
 

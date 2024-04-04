@@ -70,6 +70,7 @@ Users should be able to:
 - [Next.js Docs](https://nextjs.org/docs)
 - [Tailwind Docs](https://tailwindcss.com/docs)
 - [Dynamic Class Problem](https://stackoverflow.com/questions/72148525/tailwindcss-3-classes-doesnt-override-previous-classes)
+- [When & How To Use TwMerge](https://github.com/dcastil/tailwind-merge/blob/v2.2.2/docs/when-and-how-to-use-it.md)
 
 ## Author
 
